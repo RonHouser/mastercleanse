@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Master Cleanse - Personal Experience & Guide</title>
+    <meta name="description" content="My personal guide and live updates on the Master Cleanse. Sharing my experience and instructions."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --text: #1a1a1a;
+            --accent: #4aadaa;
+            --light: #ffffff;
+            --gray: #555;
+            --border: #e0e0e0;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        header {
+            background: var(--light);
+            padding: 1.5rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid var(--border);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .nav-links a.active, .nav-links a:hover { color: var(--accent); }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5% 6rem;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .hero {
+            text-align: center;
+            padding: 6rem 5% 4rem;
+            background: linear-gradient(to bottom, #f0fafa, var(--bg));
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            color: var(--gray);
+        }
+        .page-heading {
+            text-align: center;
+            padding: 5rem 5% 3rem;
+            background: linear-gradient(to bottom, #f0fafa, var(--bg));
+        }
+        .page-heading h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+        .page-heading p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--gray);
+        }
+        section { margin-bottom: 6rem; }
+        h2 { font-size: 2rem; font-weight: 600; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.4rem; margin-top: 2rem; }
+        ul { list-style: disc; padding-left: 1.5rem; margin: 1rem 0; }
+        li { margin-bottom: 0.8rem; }
+        .journey-entry {
+            background: var(--light);
+            padding: 1.8rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .entry-date {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--gray);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 768px) {
+            .nav-links { gap: 1rem; font-size: 0.95rem; flex-wrap: wrap; justify-content: center; }
+            .hero, .page-heading { padding: 4rem 5% 3rem; }
+            .page-heading h1 { font-size: 2.3rem; }
+            main { padding-bottom: 5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Master Cleanse</div>
+            <div class="nav-links">
+                <a data-tab="home" class="active">Home</a>
+                <a data-tab="ingredients">Ingredients</a>
+                <a data-tab="instructions">Instructions</a>
+                <a data-tab="expectations">Expectations</a>
+                <a data-tab="experience">My Experience</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Tab -->
+        <div id="home" class="tab-content active">
+            <div class="hero">
+                <h1>My Master Cleanse Experience</h1>
+                <p>My personal guide to the Master Cleanse. I love The Master Cleanse and many people have asked about my experience, so I am using this space to share. You will find everything you need to try it out for yourself — ingredients, instructions, what to expect, and my own personal experience. No ads, no monetization, no "like and subscribe" — just sharing what I've learned over multiple cleanses.</p>
+                <p>Feel free to bookmark and share this page.</p>
+            </div>
+        </div>
+
+        <!-- Ingredients Tab -->
+        <div id="ingredients" class="tab-content">
+            <div class="page-heading">
+                <h1>Ingredients</h1>
+                <p>The exact items I use every time — with links and reasons why each one matters</p>
+            </div>
+            <section>
+                <div class="video-container">
+                    <!-- Embed your ingredients video here -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_INGREDIENTS_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li>Lemons (~35 per week) — Buy fresh from Aldi, Wal-Mart, etc.</li>
+                    <li>Maple Syrup (“Dark Color, Robust Taste”, Grade A preferred for highest mineral content, 64oz) — <a href="https://www.amazon.com/Vermont-Maple-Syrup-Robust-Former/dp/B07BZCH7H5?th=1" target="_blank">Amazon</a></li>
+                    <li>Cayenne Pepper — Aldi, Wal-Mart, etc.</li>
+                    <li>Celtic Grey Sea Salt — <a href="https://www.amazon.com/Light-Celtic-Sea-Salt-Resealable/dp/B000SWTKV0/..." target="_blank">Amazon</a></li>
+                    <li>Smooth Move Tea (senna-based laxative tea) — Wal-Mart or <a href="https://www.amazon.com/Traditional-Medicinals-Organic-Smooth-Herbal/dp/B00H7KFS5I/..." target="_blank">Amazon</a></li>
+                    <li>Mint Tea (optional but recommended) — Wal-Mart or <a href="https://www.amazon.com/Traditional-Medicinals-HERB-TEA-PEPPERMINT/dp/B00CMU0CKE/..." target="_blank">Amazon</a></li>
+                </ul>
+                <p><strong>Note:</strong> Stick to these exact types — especially Grade A Dark/Robust maple syrup for minerals/vitamins, sea salt for mineral content, and fresh lemons for enzymes.</p>
+            </section>
+            <section>
+                <h2>Additional Information</h2>
+                <p>Follow exactly to avoid 99% of issues. I've done this multiple times with great success — amazing energy, zero joint pain/stiffness after the adjustment period.</p>
+                <h3>Key Ingredient Purposes</h3>
+                <ul>
+                    <li><strong>Saltwater Flush</strong>: Replenishes minerals/electrolytes + scrubs intestines. Crucial for eliminating toxins; skipping causes fatigue/headaches/aches.</li>
+                    <li><strong>Fresh Lemons</strong>: Enzyme-rich; avoid bottled juice.</li>
+                    <li><strong>Maple Syrup (Dark/Robust)</strong>: Highest mineral/vitamin content.</li>
+                    <li><strong>Cayenne</strong>: Anti-inflammatory, aids joints + digestion.</li>
+                    <li><strong>Smooth Move Tea</strong>: Loosens buildup overnight; flush eliminates in AM.</li>
+                    <li><strong>Mint Tea</strong>: Pleasant break from lemonade taste.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Instructions Tab -->
+        <div id="instructions" class="tab-content">
+            <div class="page-heading">
+                <h1>Instructions</h1>
+                <p>Step-by-step daily routine, how to make the lemonade, saltwater flush, tea timing, and safe ease-out protocol</p>
+            </div>
+            <section>
+                <div class="video-container">
+                    <!-- Embed your demo video(s) here - e.g., making lemonade, saltwater flush -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_INSTRUCTIONS_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>Daily routine (same every day):</p>
+                <!-- ... rest of instructions section unchanged ... -->
+                <ul>
+                    <li><strong>Saltwater Flush</strong> (first thing in morning): 2 tsp sea salt in 32 oz lukewarm water <strong>OR</strong> 1 tsp in 20 oz. Drink quickly. Expect elimination in ~30 min (plan time at home).</li>
+                    <li><strong>Lemonades</strong> (every hour, on the hour):
+                        <ul>
+                            <li>Juice from half a fresh lemon (~2 Tbsp)</li>
+                            <li>2 Tbsp maple syrup</li>
+                            <li>1/8 tsp cayenne pepper</li>
+                            <li>8-10 oz water</li>
+                        </ul>
+                        Drink 6–12+ per day (no limit — more helps if hungry/fatigued).
+                    </li>
+                    <li><strong>Tea</strong>
+                        <ul>
+                            <li>Smooth Move tea — last thing at night (steep 5-7 min).</li>
+                            <li>Mint tea — optional anytime (except after Smooth Move).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Coming Off the Cleanse (Ease-Out – Minimum 2–3 Days)</h3>
+                <ul>
+                    <li><strong>Day 1</strong>: Fresh orange juice with pulp (drink all day), soup broth (for lunch/dinner).</li>
+                    <li><strong>Day 2</strong>: Orange juice, soup broth with chewed solids, leafy green salad.</li>
+                    <li><strong>Day 3+</strong>: Gradually return to normal diet. Start slow with carbs; avoid heavy meals initially.</li>
+                </ul>
+                <p><strong>Warning:</strong> Do NOT eat solid food immediately after — risk of injury to inactive digestive system.</p>
+            </section>
+            <section>
+                <h2>My Daily Example</h2>
+                <ul>
+                    <li>5:00 AM: Wake, start bath, drink saltwater flush. Bathroom ~5:15. Bath soak.</li>
+                    <li>Prep lunch bag: mason jars, lemons (5), squeezer, syrup, cayenne, spoons, knife.</li>
+                    <li>Work: Make/chug lemonade on the hour (8 AM–5/6 PM). Sometimes skip to align with family dinner.</li>
+                    <li>Drink water freely.</li>
+                    <li>Every 5th day (or as needed): Mint tea milestone.</li>
+                    <li>9:00 PM: Smooth Move tea before bed.</li>
+                </ul>
+                <p>Tip: Lunch walk (30–60 min outside, music) — becomes euphoric later in cleanse.</p>
+            </section>
+        </div>
+
+        <!-- Expectations Tab -->
+        <div id="expectations" class="tab-content">
+            <div class="page-heading">
+                <h1>Expectations</h1>
+                <p>What to expect day by day — the hard part, the rewards, and how it typically feels physically and mentally</p>
+            </div>
+            <section>
+                <div class="video-container">
+                    <!-- Embed your expectations/timeline video here -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_EXPECTATIONS_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h3>Days 1–5 (Adjustment – Often Hardest)</h3>
+                <!-- ... rest unchanged ... -->
+                <ul>
+                    <li>Caffeine/sugar withdrawal headaches (taper off in prep week — don't cold turkey).</li>
+                    <li>Body aches (toxin release, especially first cleanse).</li>
+                    <li>Funky tastes/smells, dark sweat (toxins exiting).</li>
+                    <li>Hunger mostly on-hour; drink extra lemonades if needed.</li>
+                    <li>Longer flush times early on.</li>
+                </ul>
+                <h3>Days 6+ (Rewards Phase)</h3>
+                <ul>
+                    <li>Joint pain disappears, steady energy, euphoria.</li>
+                    <li>Lemonades feel refreshing/invigorating.</li>
+                    <li>Fuzzy tongue/teeth — brush regularly.</li>
+                    <li>Boredom with taste — normal; think about post-cleanse foods.</li>
+                </ul>
+                <p>Weight loss: ~1 lb/day average after initial water/waste drop. Not a fast — hunger managed with more lemonade.</p>
+            </section>
+        </div>
+
+        <!-- My Experience Tab -->
+        <div id="experience" class="tab-content">
+            <div class="page-heading">
+                <h1>My Experience</h1>
+                <p>Real-time updates, daily thoughts, challenges, wins, and video logs from my current cleanse</p>
+            </div>
+            <section>
+                <h2>My Current Journey & Updates</h2>
+                <p>This is where I'll add real-time thoughts, daily recaps, challenges, wins, and video logs as I go through the cleanse again. Check back for updates!</p>
+                <div class="journey-entry">
+                    <div class="entry-date">Prep Week – Starting February 25, 2026</div>
+                    <p>Tapering off caffeine and sugar this week. Feeling motivated. Planning to start Day 1 soon. Goal: at least 10 days, maybe push to 20 if it feels good.</p>
+                    <p>Video log coming soon...</p>
+                    <!-- <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> -->
+                </div>
+                <!-- Add new entries above this line as you update (newest at top) -->
+                <div class="journey-entry">
+                    <div class="entry-date">Before Starting – Initial Notes</div>
+                    <p>Reminding myself: Stick to protocol exactly. More lemonade = better. Walking helps a lot. Excited for the joint relief and energy surge after Day 5.</p>
+                </div>
+                <p>To add a new update: Open this file, copy a <code>&lt;div class="journey-entry"&gt;</code> block, paste above the older ones, update date/content/videos, save, and refresh.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>•Created for personal sharing •</p>
+    </footer>
+    <script>
+        // Tab switching
+        const tabs = document.querySelectorAll('.nav-links a');
+        const contents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                const target = document.getElementById(tab.getAttribute('data-tab'));
+                target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
